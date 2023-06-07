@@ -2,4 +2,6 @@
 
 ## nvim
 1. nvimインストール
-2. ln -s ~/dotfiles/.config/nvim .config/nvim
+2. packer.nvimをインストール
+3. ln -s ~/dotfiles/neovim/.config/nvim ~/.config/nvim
+
