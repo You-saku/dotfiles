@@ -12,9 +12,9 @@ return {
       winbar = true,
       content_layout = "center",
       sources = {
-        { source = "filesystem",  display_name = get_icon("FolderClosed", 1, true) .. "File" },
-        { source = "buffers",     display_name = get_icon("DefaultFile", 1, true) .. "Bufs" },
-        { source = "git_status",  display_name = get_icon("Git", 1, true) .. "Git" },
+        { source = "filesystem", display_name = get_icon("FolderClosed", 1, true) .. "File" },
+        { source = "buffers", display_name = get_icon("DefaultFile", 1, true) .. "Bufs" },
+        { source = "git_status", display_name = get_icon("Git", 1, true) .. "Git" },
         { source = "diagnostics", display_name = get_icon("Diagnostic", 1, true) .. "Diagnostic" },
       },
     },
