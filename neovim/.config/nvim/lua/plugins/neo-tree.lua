@@ -12,9 +12,9 @@ return {
       winbar = true,
       content_layout = "center",
       sources = {
-        { source = "filesystem", display_name = get_icon("FolderClosed", 1, true) .. "File" },
-        { source = "buffers", display_name = get_icon("DefaultFile", 1, true) .. "Bufs" },
-        { source = "git_status", display_name = get_icon("Git", 1, true) .. "Git" },
+        { source = "filesystem",  display_name = get_icon("FolderClosed", 1, true) .. "File" },
+        { source = "buffers",     display_name = get_icon("DefaultFile", 1, true) .. "Bufs" },
+        { source = "git_status",  display_name = get_icon("Git", 1, true) .. "Git" },
         { source = "diagnostics", display_name = get_icon("Diagnostic", 1, true) .. "Diagnostic" },
       },
     },
@@ -57,7 +57,7 @@ return {
         if node.type == "directory" or node:has_children() then
           if not node:is_expanded() then -- if unexpanded, expand
             state.commands.toggle_node(state)
-          else -- if expanded and has children, seleect the next child
+          else                           -- if expanded and has children, seleect the next child
             require("neo-tree.ui.renderer").focus_node(state, node:get_child_ids()[1])
           end
         else -- if not a directory just open it
@@ -85,9 +85,9 @@ return {
         for i, result in pairs(results) do
           if result.val and result.val ~= "" then
             vim.list_extend(messages, {
-              { ("%s."):format(i), "Identifier" },
+              { ("%s."):format(i),           "Identifier" },
               { (" %s: "):format(result.msg) },
-              { result.val, "String" },
+              { result.val,                  "String" },
               { "\n" },
             })
           end
@@ -114,6 +114,11 @@ return {
       },
     },
     filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,
+        hide_hidden = false,
+        hide_gitignored = false,
+      },
       follow_current_file = true,
       hijack_netrw_behavior = "open_current",
       use_libuv_file_watcher = true,
