@@ -10,7 +10,6 @@ return {
         "clangd",
         "lua_ls",
         "tsserver",
-        "denols",
         "gopls",
         "rust_analyzer",
         "intelephense",
