@@ -3,7 +3,6 @@
 * clang,
 * lua,
 * ts
-* deno
 * go
 * rust
 * php
