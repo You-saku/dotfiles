@@ -16,6 +16,7 @@ return {
         "pyright",
         "hls",
         "nimls",
+        "zls",
       })
     end,
   },
