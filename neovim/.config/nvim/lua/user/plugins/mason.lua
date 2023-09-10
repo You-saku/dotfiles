@@ -17,6 +17,7 @@ return {
         "hls",
         "nimls",
         "zls",
+        "elixirls",
       })
     end,
   },
