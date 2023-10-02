@@ -1,3 +1,4 @@
+vim.cmd [[colorscheme kanagawa]]
 require('kanagawa').setup({
     compile = false,             -- enable compiling the colorscheme
     undercurl = true,            -- enable undercurls
@@ -18,9 +19,8 @@ require('kanagawa').setup({
     end,
     theme = "wave",              -- Load "wave" theme when 'background' option is not set
     background = {               -- map the value of 'background' option to a theme
-        dark = "wave",           -- try "dragon" !
+        dark = "dragon",           -- try "dragon" !
         light = "lotus"
     },
 })
 
-vim.cmd [[colorscheme kanagawa]]

@@ -1,5 +1,5 @@
-vim.cmd [[packadd packer.nvim]]
-return require('packer').startup(function(use)
+-- vim.cmd [[packadd packer.nvim]]
+return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   --
@@ -10,6 +10,10 @@ return require('packer').startup(function(use)
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
   use "neovim/nvim-lspconfig"
+
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/vim-vsnip"
 
   use "rebelot/kanagawa.nvim"
 end)
