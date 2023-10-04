@@ -16,4 +16,8 @@ return require('packer').startup(function()
   use "hrsh7th/vim-vsnip"
 
   use "rebelot/kanagawa.nvim"
+
+  use "nvim-tree/nvim-tree.lua"
+  use "nvim-tree/nvim-web-devicons"
+
 end)
