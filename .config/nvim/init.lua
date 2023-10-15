@@ -1,4 +1,5 @@
 require("plugins")
 require("lsp_cmp")
+require("tree")
 require("options")
 require("colorscheme")
