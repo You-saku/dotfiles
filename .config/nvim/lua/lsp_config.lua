@@ -7,6 +7,8 @@ require("mason-lspconfig").setup({
 		"pyright",
 		"nimls",
 		"zls",
+        "deno",
+        "tsserver",
 	},
 })
 
@@ -16,3 +18,6 @@ require("lspconfig").gopls.setup({})
 require("lspconfig").pyright.setup({})
 require("lspconfig").nimls.setup({})
 require("lspconfig").zls.setup({})
+require("lspconfig").deno.setup({})
+require("lspconfig").tsserver.setup({})
+
