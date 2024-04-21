@@ -15,9 +15,13 @@ return require('packer').startup(function()
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/vim-vsnip"
 
+  -- set colorscheme
   use "rebelot/kanagawa.nvim"
 
   use "nvim-tree/nvim-tree.lua"
   use "nvim-tree/nvim-web-devicons"
+
+  -- use copilot
+  use "github/copilot.vim"
 
 end)
