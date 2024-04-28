@@ -7,6 +7,8 @@ return require('packer').startup(function()
   -- use 'プラグインA'
   -- use 'プラグインB'
   --
+
+  -- set mason-lspconfig
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
   use "neovim/nvim-lspconfig"
@@ -18,10 +20,11 @@ return require('packer').startup(function()
   -- set colorscheme
   use "rebelot/kanagawa.nvim"
 
+  -- set tree
   use "nvim-tree/nvim-tree.lua"
   use "nvim-tree/nvim-web-devicons"
 
-  -- use copilot
+  -- set copilot
   use "github/copilot.vim"
 
 end)
