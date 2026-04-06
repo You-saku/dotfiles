@@ -1,6 +1,0 @@
-require("plugins")
-require("lsp_cmp")
-require("lsp_config")
-require("tree")
-require("options")
-require("colorscheme")
