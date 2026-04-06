@@ -1,0 +1,8 @@
+# This is the configuration file for Ghostty.
+
+## theme
+theme = catppuccin-mocha
+
+## 「ます」が「〼」に文字化けするのを防ぐ
+font-feature = -calt
+font-feature = -dlig
